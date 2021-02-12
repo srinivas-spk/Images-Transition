@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;    
+}
+
+.box1 {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.img-box1 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+}
+
+.img-box1 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.img-box1 .overlay-img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.img-box1 .overlay-img:hover {
+    opacity: 0.6;
+}
+
+.box2 {
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.img-box2 {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+}
+
+.img-box2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.img-box2::after {
+    content: '❤ LOVE';
+    color: white;
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.img-box2:hover::after {
+    opacity: 0.7;
+}
+
